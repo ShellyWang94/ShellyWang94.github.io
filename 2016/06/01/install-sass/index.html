@@ -1,0 +1,360 @@
+
+ <!DOCTYPE HTML>
+<html  xmlns:wb="http://open.weibo.com/wb">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>ShellyWang 王小丽</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="说一说关于sass的安装一.安装方法(一)安装ruby直接在官网上下载安装包，点击下一步，下一步，下一步，记得勾选选项的时候选择“add Ruby executables to your PATH”
+(二)安装完成后：在程序中搜索ruby，选择start Command prompt with Ru">
+    
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="idreajay" />
+    <meta name="twitter:title" content="ShellyWang 王小丽" />
+      
+    
+    
+    <link rel="alternate" href="atom.xml" title="ShellyWang 王小丽" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="ShellyWang 王小丽">ShellyWang 王小丽</a></h1>
+				<h2 class="blog-motto">“读最好的书，走最好的路”</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">文章</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+						<li><a href="/atom.xml">RSS订阅</a></li>
+					
+					<li>
+					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="30" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/06/01/install-sass/" title="" itemprop="url"></a>
+  </h1>
+  <!-- 显示作者
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="John Doe">John Doe</a>
+    </p>
+  -->  
+  <p class="article-time">
+    <time datetime="2016-06-01T09:30:37.781Z" itemprop="datePublished">2016-06-01</time>
+    Updated:<time datetime="2016-06-01T10:19:38.038Z" itemprop="dateModified">2016-06-01</time>
+    
+  </p>
+</header>
+
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#说一说关于sass的安装"><span class="toc-number">1.</span> <span class="toc-text">说一说关于sass的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-安装方法"><span class="toc-number">1.1.</span> <span class="toc-text">一.安装方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-安装ruby"><span class="toc-number">1.1.1.</span> <span class="toc-text">(一)安装ruby</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-安装完成后："><span class="toc-number">1.1.2.</span> <span class="toc-text">(二)安装完成后：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-安装Sass"><span class="toc-number">1.1.3.</span> <span class="toc-text">(三)安装Sass</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-通过命令gem-install-sass来安装"><span class="toc-number">1.1.4.</span> <span class="toc-text">1. 通过命令gem install sass来安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-通过github仓库来安装"><span class="toc-number">1.1.5.</span> <span class="toc-text">2. 通过github仓库来安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-通过本地安装"><span class="toc-number">1.1.6.</span> <span class="toc-text">3. 通过本地安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-淘宝RubyGems镜像安装Sass"><span class="toc-number">1.1.7.</span> <span class="toc-text">4. 淘宝RubyGems镜像安装Sass</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-以及官网上所述的无需ruby的安装方法"><span class="toc-number">1.1.8.</span> <span class="toc-text">5. 以及官网上所述的无需ruby的安装方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以上五种是我在安装当中搜索到的方法，官网上对于安装ruby环境然后使用cmd安装有详细的步骤"><span class="toc-number">1.2.</span> <span class="toc-text">以上五种是我在安装当中搜索到的方法，官网上对于安装ruby环境然后使用cmd安装有详细的步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-但是，一切总是要出问题的-ㄒoㄒ"><span class="toc-number">1.3.</span> <span class="toc-text">二.但是，一切总是要出问题的/(ㄒoㄒ)/</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（一）要谈问题，就从第一个方法的问题谈起吧"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）要谈问题，就从第一个方法的问题谈起吧~</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（二）于是转战本地文件安装"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二）于是转战本地文件安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（三）然而我还不能狗带，带着决心开启了淘宝镜像安装"><span class="toc-number">1.3.3.</span> <span class="toc-text">（三）然而我还不能狗带，带着决心开启了淘宝镜像安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#输入sass-v，没问题哒，正确显示"><span class="toc-number">2.</span> <span class="toc-text">输入sass -v，没问题哒，正确显示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#血泪提示："><span class="toc-number">2.1.</span> <span class="toc-text">血泪提示：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-当remove之后，如果设置不上的话，那么想再试试第一种是一定会出错（似乎是找不到sass的意思"><span class="toc-number">2.1.1.</span> <span class="toc-text">1. 当remove之后，如果设置不上的话，那么想再试试第一种是一定会出错（似乎是找不到sass的意思)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-如果你的电脑第一种方法安装不上的话，那么源地址也无法设置回去，这时候我采取的方法是将ruby卸载，卸载完成之后把c盘里的源文件删光十分重要（一般是在user-gt-ausus下的，看你的命令在哪里运行），否则重新安装仍然是一样的配置"><span class="toc-number">2.1.2.</span> <span class="toc-text">2. 如果你的电脑第一种方法安装不上的话，那么源地址也无法设置回去，这时候我采取的方法是将ruby卸载，卸载完成之后把c盘里的源文件删光十分重要（一般是在user>ausus下的，看你的命令在哪里运行），否则重新安装仍然是一样的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-教程建议我安装ruby在c盘，我安装在D盘，卸载的时候删光了所有相关文件，得到干净的环境"><span class="toc-number">2.1.3.</span> <span class="toc-text">3. 教程建议我安装ruby在c盘，我安装在D盘，卸载的时候删光了所有相关文件，得到干净的环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第一次写博文-就先写到这里啦-给自已一个拥抱"><span class="toc-number">2.2.</span> <span class="toc-text">第一次写博文 就先写到这里啦~给自已一个拥抱</span></a></li></ol></li></ol>
+		</div>
+		
+		<h1 id="说一说关于sass的安装"><a href="#说一说关于sass的安装" class="headerlink" title="说一说关于sass的安装"></a>说一说关于sass的安装</h1><h2 id="一-安装方法"><a href="#一-安装方法" class="headerlink" title="一.安装方法"></a>一.安装方法</h2><h3 id="一-安装ruby"><a href="#一-安装ruby" class="headerlink" title="(一)安装ruby"></a>(一)安装ruby</h3><p>直接在官网上下载安装包，点击下一步，下一步，下一步，记得勾选选项的时候选择<strong>“add Ruby executables to your PATH”</strong></p>
+<h3 id="二-安装完成后："><a href="#二-安装完成后：" class="headerlink" title="(二)安装完成后："></a>(二)安装完成后：</h3><p>在程序中搜索ruby，选择<strong>start Command prompt with Ruby</strong>应用（其实直接在cmd中运行也行）</p>
+<h3 id="三-安装Sass"><a href="#三-安装Sass" class="headerlink" title="(三)安装Sass"></a>(三)安装Sass</h3><p>在网上的依靠ruby的安装方法一共有五种，这里先罗列一下：  </p>
+<h3 id="1-通过命令gem-install-sass来安装"><a href="#1-通过命令gem-install-sass来安装" class="headerlink" title="1. 通过命令gem install sass来安装"></a>1. 通过命令gem install sass来安装</h3><h3 id="2-通过github仓库来安装"><a href="#2-通过github仓库来安装" class="headerlink" title="2. 通过github仓库来安装"></a>2. 通过github仓库来安装</h3><p><strong>git clone git://github.com/nex3/sass.git</strong><br><strong>cd sass</strong><br><strong>rake install</strong>  </p>
+<h3 id="3-通过本地安装"><a href="#3-通过本地安装" class="headerlink" title="3. 通过本地安装"></a>3. 通过本地安装</h3><p>这点需要先到<a href="https://github.com/sass/sass去下载了安装包，放在本地，之后在命令行中输入" target="_blank" rel="external">https://github.com/sass/sass去下载了安装包，放在本地，之后在命令行中输入</a>  gem install 安装包路径  </p>
+<h3 id="4-淘宝RubyGems镜像安装Sass"><a href="#4-淘宝RubyGems镜像安装Sass" class="headerlink" title="4. 淘宝RubyGems镜像安装Sass"></a>4. 淘宝RubyGems镜像安装Sass</h3><p>先移除默认https：//rubygems.org源<br>添加淘宝源<a href="http://rubygems-china.oss-cn-hangzhou.aliyuncs.com" target="_blank" rel="external">http://rubygems-china.oss-cn-hangzhou.aliyuncs.com</a></p>
+<h3 id="5-以及官网上所述的无需ruby的安装方法"><a href="#5-以及官网上所述的无需ruby的安装方法" class="headerlink" title="5. 以及官网上所述的无需ruby的安装方法"></a>5. 以及官网上所述的无需ruby的安装方法</h3><p><img src="file:C:\Users\asus\Desktop\image\1.png" alt=""><br><a href="http://sass-lang.com/install" target="_blank" rel="external">http://sass-lang.com/install</a><br>对啦，官网上的安装软件方法应该是最简单的，然而我并没有去试，因为它们都是基于sass开发的框架，所以安装好它们也相当于安装好sass了  </p>
+<h2 id="以上五种是我在安装当中搜索到的方法，官网上对于安装ruby环境然后使用cmd安装有详细的步骤"><a href="#以上五种是我在安装当中搜索到的方法，官网上对于安装ruby环境然后使用cmd安装有详细的步骤" class="headerlink" title="以上五种是我在安装当中搜索到的方法，官网上对于安装ruby环境然后使用cmd安装有详细的步骤"></a>以上五种是我在安装当中搜索到的方法，官网上对于安装ruby环境然后使用cmd安装有详细的步骤</h2><p><strong>官网链接：<a href="http://HTTP://WWW.SASS.HK/INSTALL-SASS.HTML" target="_blank" rel="external">HTTP://WWW.SASS.HK/INSTALL-SASS.HTML</a></strong></p>
+<h2 id="二-但是，一切总是要出问题的-ㄒoㄒ"><a href="#二-但是，一切总是要出问题的-ㄒoㄒ" class="headerlink" title="二.但是，一切总是要出问题的/(ㄒoㄒ)/"></a>二.但是，一切总是要出问题的/(ㄒoㄒ)/</h2><h3 id="（一）要谈问题，就从第一个方法的问题谈起吧"><a href="#（一）要谈问题，就从第一个方法的问题谈起吧" class="headerlink" title="（一）要谈问题，就从第一个方法的问题谈起吧~"></a>（一）要谈问题，就从第一个方法的问题谈起吧~</h3><p>安装ruby的过程不能再简单，我满心欢喜地以为能在很快的时间内安好sass，然而事实证明是我想多了<br>当我输入<strong>gem install sass</strong>出现的是酱紫的场景<br><img src="file:C:\Users\asus\Desktop\image\2.png" alt=""><br>用我糟糕的口语来翻译一下大意就是网络错误<br>excuse me？<br>呵呵，原来是国外的源，国内的墙，这堵墙挡了连接获取源文件啊<br>但是，我是不会轻易放弃地，于是，我开启latern再次来一次，然并卵，依然是这样的效果，我想哭，但是最简单的安装方式是不行的了  </p>
+<h3 id="（二）于是转战本地文件安装"><a href="#（二）于是转战本地文件安装" class="headerlink" title="（二）于是转战本地文件安装"></a>（二）于是转战本地文件安装</h3><p><img src="file:C:\Users\asus\Desktop\image\3.png" alt=""><br>可能是我输入错误还是怎么的，反正就是不行。在这里在说一个小插曲，我直接给了github上的链接，因为我在sass主页上徘徊了很久点了很久链接依然点不动，最后在文档哪里找到了，总之，这种方法依然错误，依然没有成功  </p>
+<h3 id="（三）然而我还不能狗带，带着决心开启了淘宝镜像安装"><a href="#（三）然而我还不能狗带，带着决心开启了淘宝镜像安装" class="headerlink" title="（三）然而我还不能狗带，带着决心开启了淘宝镜像安装"></a>（三）然而我还不能狗带，带着决心开启了淘宝镜像安装</h3><p>当我移除了源地址<strong>（gem sources –remove https：rubygems.org）</strong>之后，再次设置淘宝源地址——即官网给出来的<strong>（gem sources a- <a href="https://ruby.taobao.org）" target="_blank" rel="external">https://ruby.taobao.org）</a></strong>时<br><img src="file:C:\Users\asus\Desktop\image\4.png" alt=""><br>我一副大写的生无可恋脸（忘说，http和https我都试过，一样的效果，因为淘宝已经不维护了，换地址了，即开头所写的地址）<br>好了，到这里为止我都觉得老天一定是在玩我<br>最后经过九牛二虎之力，我终于找到了正确的地址安装上了sass，地址在开头已经附上~<br>对了，在检测源地址是否已经改变的时候可以输入<strong>gem sources -l</strong>命令，如果成功，会显示你设置的新的源地址<br>放上我成功的截图<br><img src="file:C:\Users\asus\Desktop\image\6.png" alt="">  </p>
+<h1 id="输入sass-v，没问题哒，正确显示"><a href="#输入sass-v，没问题哒，正确显示" class="headerlink" title="输入sass -v，没问题哒，正确显示"></a>输入<strong>sass -v</strong>，没问题哒，正确显示</h1><h2 id="血泪提示："><a href="#血泪提示：" class="headerlink" title="血泪提示："></a>血泪提示：</h2><h3 id="1-当remove之后，如果设置不上的话，那么想再试试第一种是一定会出错（似乎是找不到sass的意思"><a href="#1-当remove之后，如果设置不上的话，那么想再试试第一种是一定会出错（似乎是找不到sass的意思" class="headerlink" title="1. 当remove之后，如果设置不上的话，那么想再试试第一种是一定会出错（似乎是找不到sass的意思)"></a>1. 当remove之后，如果设置不上的话，那么想再试试第一种是一定会出错（似乎是找不到sass的意思)</h3><h3 id="2-如果你的电脑第一种方法安装不上的话，那么源地址也无法设置回去，这时候我采取的方法是将ruby卸载，卸载完成之后把c盘里的源文件删光十分重要（一般是在user-gt-ausus下的，看你的命令在哪里运行），否则重新安装仍然是一样的配置"><a href="#2-如果你的电脑第一种方法安装不上的话，那么源地址也无法设置回去，这时候我采取的方法是将ruby卸载，卸载完成之后把c盘里的源文件删光十分重要（一般是在user-gt-ausus下的，看你的命令在哪里运行），否则重新安装仍然是一样的配置" class="headerlink" title="2. 如果你的电脑第一种方法安装不上的话，那么源地址也无法设置回去，这时候我采取的方法是将ruby卸载，卸载完成之后把c盘里的源文件删光十分重要（一般是在user&gt;ausus下的，看你的命令在哪里运行），否则重新安装仍然是一样的配置"></a>2. 如果你的电脑第一种方法安装不上的话，那么源地址也无法设置回去，这时候我采取的方法是将ruby卸载，卸载完成之后把c盘里的源文件删光十分重要（一般是在user&gt;ausus下的，看你的命令在哪里运行），否则重新安装仍然是一样的配置</h3><h3 id="3-教程建议我安装ruby在c盘，我安装在D盘，卸载的时候删光了所有相关文件，得到干净的环境"><a href="#3-教程建议我安装ruby在c盘，我安装在D盘，卸载的时候删光了所有相关文件，得到干净的环境" class="headerlink" title="3. 教程建议我安装ruby在c盘，我安装在D盘，卸载的时候删光了所有相关文件，得到干净的环境"></a>3. 教程建议我安装ruby在c盘，我安装在D盘，卸载的时候删光了所有相关文件，得到干净的环境</h3><h2 id="第一次写博文-就先写到这里啦-给自已一个拥抱"><a href="#第一次写博文-就先写到这里啦-给自已一个拥抱" class="headerlink" title="第一次写博文 就先写到这里啦~给自已一个拥抱"></a>第一次写博文 就先写到这里啦~给自已一个拥抱</h2>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-share" id="share">
+
+  
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_tqq"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_renren"></a>
+    <a href="http://www.jiathis.com/share?uid=1987046" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1987046" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+
+</div>
+
+
+
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/05/22/first-passage/"  title="first passage">
+ <strong>Next:</strong><br/> 
+ <span>first passage
+</span>
+</a>
+</div>
+
+</nav>
+
+	<!-- 多说-->
+
+<section class="comment">
+<div class="ds-thread" data-thread-key="post-" data-title="" data-url="http://yoursite.com/2016/06/01/install-sass/"></div>
+</section>
+<!-- disqus-->
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <p class="asidetitle">关注</p>
+<iframe width="100%" height="120" class="share_self" marginheight="5px" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=120&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2583230784&verifier=1d07a1a0&dpc=1"></iframe>
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+      <li><a href="http://blog.csdn.net/dreajay" target="_blank" title="dreajay csdn">CSDN</a></li>
+      <li><a href="https://github.com/dreajay" target="_blank" title="dreajay github">github</a></li>
+      <li><a href="http://www.douban.com/people/72514701/" target="_blank" title="dreajay豆瓣">豆瓣</a></li>
+    </ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<section class="info">
+		<p> 没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生！ <br/>
+			再长的路，一步步也能走完，再短的路，不迈开双脚也无法到达，平凡的脚步也可以走完伟大的行程！</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2583230784" target="_blank" title="weibo"></a>
+		
+		
+		<a href="https://twitter.com/idreajay" target="_blank" title="twitter"></a>
+		
+		
+		<a href="https://github.com/dreajay" target="_blank" title="github"></a>
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="pacman">pacman</a> © 2016 
+		
+		<a href="http://yoursite.com" target="_blank" title="John Doe">John Doe</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"dreajaygithubblog"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F77edef7e6931022edbd2322ec66456e1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+<script type="text/javascript">
+	(function($) { 
+		// When to show the scroll link
+		// higher number = scroll link appears further down the page   
+		var upperLimit = 300;
+		
+		// Our scroll link element
+		var scrollElem = $('#totop');
+	   
+		// Scroll to top speed
+		var scrollSpeed = 800;
+	   
+		// Show and hide the scroll to top link based on scroll position   
+		scrollElem.hide();
+		$(window).scroll(function () {            
+			var scrollTop = $(document).scrollTop();       
+			if ( scrollTop > upperLimit ) {
+				$(scrollElem).stop().fadeTo(300, 1); // fade back in           
+			}else{       
+				$(scrollElem).stop().fadeTo(300, 0); // fade out
+			}
+		});
+		// Scroll to top animation on click
+		$(scrollElem).click(function(){
+			$('html, body').animate({scrollTop:0}, scrollSpeed); return false;
+		});
+	})(jQuery);
+</script>
+
+
+  </body>
+</html>
+
